@@ -4,7 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {MatButtonModule, MatButtonToggleModule, MatIconModule, MatSidenavModule} from "@angular/material";
+import {
+  MatButtonModule,
+  MatButtonToggleModule,
+  MatIconModule,
+  MatMenuModule,
+  MatSidenavModule
+} from "@angular/material";
 
 @NgModule({
   declarations: [
@@ -17,6 +23,7 @@ import {MatButtonModule, MatButtonToggleModule, MatIconModule, MatSidenavModule}
     MatIconModule,
     MatButtonToggleModule,
     MatSidenavModule,
+    MatMenuModule,
     AppRoutingModule
   ],
   providers: [],
