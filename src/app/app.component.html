@@ -2,6 +2,24 @@
 
 <button mat-raised-button color="primary"> Hello World!</button>
 
+
+<mat-sidenav-container>
+  <mat-sidenav #sideNav>
+    我是左邊選單
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <button mat-button (click)="sideNav.toggle()">切換左邊選單狀態</button>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+<mat-drawer-container style="height:100px;border: 1px solid black">
+  <mat-drawer mode="side" opened="true">Drawer Side</mat-drawer>
+  <mat-drawer-content>Content</mat-drawer-content>
+</mat-drawer-container>
+
 <div>
   這是一般的ICON顏色
   <mat-icon>person</mat-icon>
@@ -133,5 +151,3 @@
   </mat-button-toggle-group>
   <div>粗體：{{ buttonToggleBold.checked }}、斜體：{{ buttonToggleItalic.checked }}、底線：{{ buttonToggleUnderlined.checked }}</div>
 </div>
-
-<router-outlet></router-outlet>
