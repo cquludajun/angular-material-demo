@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {MatIconRegistry} from "@angular/material";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-material-demo';
+
+  constructor(private matIconRegistry: MatIconRegistry) {
+    this.matIconRegistry.registerFontClassAlias('fontawesome', 'fa');
+  }
+
+  ngOnInit() {}
 }
