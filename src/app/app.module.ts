@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {SharedMaterialModule} from "./shared-material/shared-material.module";
+import {MatButtonModule, MatButtonToggleModule, MatIconModule} from "@angular/material";
 
 @NgModule({
   declarations: [
@@ -13,7 +13,9 @@ import {SharedMaterialModule} from "./shared-material/shared-material.module";
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    SharedMaterialModule,
+    MatButtonModule,
+    MatIconModule,
+    MatButtonToggleModule,
     AppRoutingModule
   ],
   providers: [],
